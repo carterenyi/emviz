@@ -1,5 +1,5 @@
 ---
-title: ‘EMViz (Early Music Visualization): MATLAB runtime application’
+title: "EMViz (Early Music Visualization): MATLAB runtime application"
 tags:
   - MATLAB
   - music
@@ -21,7 +21,7 @@ date: 16 October 2018
 bibliography: paper.bib
 ---
 
-#Summary
+# Summary
 
 EMViz (Early Music Visualization) provides built-in pattern recognition for symbolic music (MIDI) based on a contour recursion algorithm by Carter-Enyi [@Carter-Enyi:2016a] producing visualizations of musical form using arc diagrams, as proposed by Wattenberg ([@Wattenberg:2002]). Currently implemented in MATLAB and deployed as a standalone executable (using MATLAB Runtime), EMViz is now available at emviz.org and https://github.com/carterenyi/emviz (MIT license).
 
@@ -49,20 +49,10 @@ Figure 3: Josquin des Prez
 Figure 4: J. S. Bach
 ![Example figure4.png](figure4.png)
 
-In summary, EMViz (Early Music Visualization) identifies and implements three major improvements over Wattenberg’s Shape of Song: (1) a pattern-matching algorithm based on heuristics from music theory, (2) theme identification by user input or selection integrated into the application, and (3) color-coding of arcs (between matched patterns) and a legend to make the diagram more comprehensible, interpretive and utilitarian for research and teaching—instead of just a pretty picture. 
-
-# Citations
-
-Citations to entries in paper.bib should be in
-[rMarkdown](http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html)
-format.
-
-# Figures
-Figures can be included like this: ![Example figure.](figure.png)
+In summary, EMViz (Early Music Visualization) identifies and implements three major improvements over Wattenberg’s Shape of Song: (1) a pattern-matching algorithm based on heuristics from music theory, (2) theme identification by user input or selection integrated into the application, and (3) color-coding of arcs (between matched patterns) and a legend to make the diagram more comprehensible, interpretive and utilitarian for research and teaching—instead of just a pretty picture.
 
 # Acknowledgements
 
 The project was partially funded by the American Council of Learned Societies (ACLS).
 
 # References
-
