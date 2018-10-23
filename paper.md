@@ -41,12 +41,15 @@ The algorithm brings together contour theory ([@Morris:1987], [@Quinn:1997]) wit
 Example arc diagram visualizations include music from the Liber Usualis, Josquin des Prez and J. S. Bach.
 
 Figure 2: Liber Usualis
+
 ![Example figure2.png](figure2.png)
 
 Figure 3: Josquin des Prez
+
 ![Example figure3.png](figure3.png)
 
 Figure 4: J. S. Bach
+
 ![Example figure4.png](figure4.png)
 
 In summary, EMViz (Early Music Visualization) identifies and implements three major improvements over Wattenberg’s Shape of Song: (1) a pattern-matching algorithm based on heuristics from music theory, (2) theme identification by user input or selection integrated into the application, and (3) color-coding of arcs (between matched patterns) and a legend to make the diagram more comprehensible, interpretive and utilitarian for research and teaching—instead of just a pretty picture.
