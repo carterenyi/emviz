@@ -52,7 +52,7 @@ MATLAB 2017b
 
 ## Contributing
 
-Please read https://github.com/carterenyi/emviz/blob/master/contributin.md for details on our code of conduct, and the process for submitting pull requests to us.
+Please read https://github.com/carterenyi/emviz/blob/master/contributing.md for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Authors
 
