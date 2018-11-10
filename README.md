@@ -60,7 +60,7 @@ Please read [contributing.md](https://github.com/carterenyi/emviz/blob/master/co
 
 ## License
 
-This project is licensed under the MIT License - see the [license](https://github.com/carterenyi/emviz/blob/master/license.md) file for details
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/carterenyi/emviz/blob/master/LICENSE) file for details
 
 ## Acknowledgments
 
