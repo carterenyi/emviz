@@ -52,7 +52,7 @@ MATLAB 2017b
 
 ## Contributing
 
-Please read emviz/contributing.md for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [contributing.md] (https://github.com/carterenyi/emviz/blob/master/contributing.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Authors
 
@@ -60,7 +60,7 @@ Please read emviz/contributing.md for details on our code of conduct, and the pr
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](emviz/license.md) file for details
+This project is licensed under the MIT License - see the [license.md](https://github.com/carterenyi/emviz/blob/master/license.md) file for details
 
 ## Acknowledgments
 
