@@ -40,7 +40,7 @@ MATLAB Runtime so your computer can interpret the code for the algorithm and GUI
 ## Running the tests
 
 MIDI files for testing are included at the link above. You should be able to produce the images in
-[paper.md](https://github.com/carterenyi/emviz/blob/master/emviz/paper.md)
+[paper.md](https://github.com/carterenyi/emviz/blob/master/paper.md)
 
 ## Deployment
 
@@ -60,7 +60,7 @@ Please read [contributing.md](https://github.com/carterenyi/emviz/blob/master/co
 
 ## License
 
-This project is licensed under the MIT License - see the [license.md](https://github.com/carterenyi/emviz/blob/master/license) file for details
+This project is licensed under the MIT License - see the [license](https://github.com/carterenyi/emviz/blob/master/license) file for details
 
 ## Acknowledgments
 
