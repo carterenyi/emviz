@@ -1,4 +1,4 @@
-# emviz: Early Music Visualization
+![Example EMVizLogo.png](EMVizLogo.png)
 
 EMViz (Early Music Visualization) provides built-in pattern recognition for symbolic music based on a contour recursion algorithm by Carter-Enyi (2016) producing visualizations of musical form using arc diagrams, as proposed by Wattenberg (2002). The algorithm brings together contour theory (Morris 1987, Quinn 1996, Schultz 2013) with studies of melodic
 accent (Thomassen 1982, Huron 2006). Symbolic music data (.midi, .xml) from various sources (including ELVIS at McGill and the Yale Classical Archives Corpus) may be imported, analyzed and visualized in a matter of minutes. Arc diagram visualizations in the supplemental materials include music from the Liber Usualis, Josquin des Prez and J. S. Bach.
