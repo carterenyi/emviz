@@ -56,7 +56,7 @@ Please read https://github.com/carterenyi/emviz/blob/master/contributin.md for d
 
 ## Authors
 
-* **Aaron Carter-Enyi**
+* **Aaron Carter-Enyi** <carterenyi@gmail.com>
 
 ## License
 
