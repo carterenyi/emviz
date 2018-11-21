@@ -24,6 +24,19 @@ function varargout = EMVizGUI(varargin)
 
 % Last Modified by GUIDE v2.5 28-Oct-2017 09:19:53
 
+try
+    addpath('~/emviz-master/')
+    addpath('~/emviz-master/emvizscripts/')
+catch
+    try
+        addpath('~/emvizscripts/')
+    catch
+        msg = 'EMViz not found in current directory.';
+        error(msg)
+        return
+    end
+end
+
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
 gui_State = struct('gui_Name',       mfilename, ...
