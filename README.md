@@ -35,7 +35,7 @@ LiberUsualis_Alleluia_Exsultate.mid
 6.	Click “Export Data as CSV”, navigate to the folder with the MIDI file, open the CSV file with the same filename (ideally, with Microsoft Excel) and compare to the sample CSV output below.
 ![CSV Output for "Alleluia, Exsultate Deo" MIDI file with default algorithm settings in Table format](TestCSVinTable.png)
 
-Additional MIDI files for testing are included at the link above. You should be able to reproduce the images in
+Additional MIDI files for testing are included in the repository. You should be able to reproduce the images in
 [paper.md](https://github.com/carterenyi/emviz/blob/master/paper.md)
 
 ## Deployment
