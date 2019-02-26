@@ -13,10 +13,7 @@ authors:
 affiliations:
   - name: Assistant Professor, Morehouse College
     index: 1
-  - name: Instructor, Spelman College
-    index: 2
-  - name: Fellow, American Council of Learned Societies
-    index: 3
+    
 date: 16 October 2018
 bibliography: paper.bib
 ---
@@ -50,6 +47,6 @@ In summary, EMViz (Early Music Visualization) identifies and implements three ma
 
 # Acknowledgements
 
-The project was partially funded by the American Council of Learned Societies (ACLS).
+The project was funded by the American Council of Learned Societies (ACLS) and the National Endowment for the Humanities (NEH).
 
 # References
