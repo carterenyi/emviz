@@ -1,0 +1,511 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+  <title>Description of EMVizGUI</title>
+  <meta name="keywords" content="EMVizGUI">
+  <meta name="description" content="EMVIZGUI MATLAB code for EMVizGUI.fig">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="generator" content="m2html v1.5 &copy; 2003-2005 Guillaume Flandin">
+  <meta name="robots" content="index, follow">
+  <link type="text/css" rel="stylesheet" href="../m2html.css">
+</head>
+<body>
+<a name="_top"></a>
+<div><a href="../index.html">Home</a> &gt;  <a href="index.html">EMVizGUI</a> &gt; EMVizGUI.m</div>
+
+<!--<table width="100%"><tr><td align="left"><a href="../index.html"><img alt="<" border="0" src="../left.png">&nbsp;Master index</a></td>
+<td align="right"><a href="index.html">Index for EMVizGUI&nbsp;<img alt=">" border="0" src="../right.png"></a></td></tr></table>-->
+
+<h1>EMVizGUI
+</h1>
+
+<h2><a name="_name"></a>PURPOSE <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="box"><strong>EMVIZGUI MATLAB code for EMVizGUI.fig</strong></div>
+
+<h2><a name="_synopsis"></a>SYNOPSIS <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="box"><strong>function varargout = EMVizGUI(varargin) </strong></div>
+
+<h2><a name="_description"></a>DESCRIPTION <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="fragment"><pre class="comment"> EMVIZGUI MATLAB code for EMVizGUI.fig
+      EMVIZGUI, by itself, creates a new EMVIZGUI or raises the existing
+      singleton*.
+
+      H = EMVIZGUI returns the handle to a new EMVIZGUI or the handle to
+      the existing singleton*.
+
+      EMVIZGUI('CALLBACK',hObject,eventData,handles,...) calls the local
+      function named CALLBACK in EMVIZGUI.M with the given input arguments.
+
+      EMVIZGUI('Property','Value',...) creates a new EMVIZGUI or raises the
+      existing singleton*.  Starting from the left, property value pairs are
+      applied to the GUI before EMVizGUI_OpeningFcn gets called.  An
+      unrecognized property name or invalid value makes property application
+      stop.  All inputs are passed to EMVizGUI_OpeningFcn via varargin.
+
+      *See GUI Options on GUIDE's Tools menu.  Choose &quot;GUI allows only one
+      instance to run (singleton)&quot;.
+
+ See also: GUIDE, GUIDATA, GUIHANDLES</pre></div>
+
+<!-- crossreference -->
+<h2><a name="_cross"></a>CROSS-REFERENCE INFORMATION <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+This function calls:
+<ul style="list-style-image:url(../matlabicon.gif)">
+</ul>
+This function is called by:
+<ul style="list-style-image:url(../matlabicon.gif)">
+</ul>
+<!-- crossreference -->
+
+<h2><a name="_subfunctions"></a>SUBFUNCTIONS <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<ul style="list-style-image:url(../matlabicon.gif)">
+<li><a href="#_sub1" class="code">function EMVizGUI_OpeningFcn(hObject, eventdata, handles, varargin)</a></li><li><a href="#_sub2" class="code">function varargout = EMVizGUI_OutputFcn(hObject, eventdata, handles)</a></li><li><a href="#_sub3" class="code">function pushbutton1_Callback(hObject, eventdata, handles)</a></li><li><a href="#_sub4" class="code">function pushbutton2_Callback(hObject, eventdata, handles)</a></li><li><a href="#_sub5" class="code">function listbox1_Callback(hObject, eventdata, handles)</a></li><li><a href="#_sub6" class="code">function listbox1_CreateFcn(hObject, eventdata, handles)</a></li><li><a href="#_sub7" class="code">function replot_Callback(hObject, eventdata, handles)</a></li><li><a href="#_sub8" class="code">function listbox2_Callback(hObject, eventdata, handles)</a></li><li><a href="#_sub9" class="code">function listbox2_CreateFcn(hObject, eventdata, handles)</a></li><li><a href="#_sub10" class="code">function pushbutton4_Callback(hObject, eventdata, handles)</a></li><li><a href="#_sub11" class="code">function edit1_Callback(hObject, eventdata, handles)</a></li><li><a href="#_sub12" class="code">function edit1_CreateFcn(hObject, eventdata, handles)</a></li><li><a href="#_sub13" class="code">function plotString_Callback(hObject, eventdata, handles)</a></li><li><a href="#_sub14" class="code">function edit2_Callback(hObject, eventdata, handles)</a></li><li><a href="#_sub15" class="code">function edit2_CreateFcn(hObject, eventdata, handles)</a></li><li><a href="#_sub16" class="code">function listbox3_Callback(hObject, eventdata, handles)</a></li><li><a href="#_sub17" class="code">function listbox3_CreateFcn(hObject, eventdata, handles)</a></li><li><a href="#_sub18" class="code">function edit3_Callback(hObject, eventdata, handles)</a></li><li><a href="#_sub19" class="code">function edit3_CreateFcn(hObject, eventdata, handles)</a></li><li><a href="#_sub20" class="code">function pushbutton6_Callback(hObject, eventdata, handles)</a></li></ul>
+
+<h2><a name="_source"></a>SOURCE CODE <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="fragment"><pre>0001 <a name="_sub0" href="#_subfunctions" class="code">function varargout = EMVizGUI(varargin)</a>
+0002 <span class="comment">% EMVIZGUI MATLAB code for EMVizGUI.fig</span>
+0003 <span class="comment">%      EMVIZGUI, by itself, creates a new EMVIZGUI or raises the existing</span>
+0004 <span class="comment">%      singleton*.</span>
+0005 <span class="comment">%</span>
+0006 <span class="comment">%      H = EMVIZGUI returns the handle to a new EMVIZGUI or the handle to</span>
+0007 <span class="comment">%      the existing singleton*.</span>
+0008 <span class="comment">%</span>
+0009 <span class="comment">%      EMVIZGUI('CALLBACK',hObject,eventData,handles,...) calls the local</span>
+0010 <span class="comment">%      function named CALLBACK in EMVIZGUI.M with the given input arguments.</span>
+0011 <span class="comment">%</span>
+0012 <span class="comment">%      EMVIZGUI('Property','Value',...) creates a new EMVIZGUI or raises the</span>
+0013 <span class="comment">%      existing singleton*.  Starting from the left, property value pairs are</span>
+0014 <span class="comment">%      applied to the GUI before EMVizGUI_OpeningFcn gets called.  An</span>
+0015 <span class="comment">%      unrecognized property name or invalid value makes property application</span>
+0016 <span class="comment">%      stop.  All inputs are passed to EMVizGUI_OpeningFcn via varargin.</span>
+0017 <span class="comment">%</span>
+0018 <span class="comment">%      *See GUI Options on GUIDE's Tools menu.  Choose &quot;GUI allows only one</span>
+0019 <span class="comment">%      instance to run (singleton)&quot;.</span>
+0020 <span class="comment">%</span>
+0021 <span class="comment">% See also: GUIDE, GUIDATA, GUIHANDLES</span>
+0022 
+0023 <span class="comment">% Edit the above text to modify the response to help EMVizGUI</span>
+0024 
+0025 <span class="comment">% Last Modified by GUIDE v2.5 28-Oct-2017 09:19:53</span>
+0026 
+0027 <span class="comment">% Begin initialization code - DO NOT EDIT</span>
+0028 gui_Singleton = 1;
+0029 gui_State = struct(<span class="string">'gui_Name'</span>,       mfilename, <span class="keyword">...</span>
+0030     <span class="string">'gui_Singleton'</span>,  gui_Singleton, <span class="keyword">...</span>
+0031     <span class="string">'gui_OpeningFcn'</span>, @<a href="#_sub1" class="code" title="subfunction EMVizGUI_OpeningFcn(hObject, eventdata, handles, varargin)">EMVizGUI_OpeningFcn</a>, <span class="keyword">...</span>
+0032     <span class="string">'gui_OutputFcn'</span>,  @<a href="#_sub2" class="code" title="subfunction varargout = EMVizGUI_OutputFcn(hObject, eventdata, handles)">EMVizGUI_OutputFcn</a>, <span class="keyword">...</span>
+0033     <span class="string">'gui_LayoutFcn'</span>,  [] , <span class="keyword">...</span>
+0034     <span class="string">'gui_Callback'</span>,   []);
+0035 <span class="keyword">if</span> nargin &amp;&amp; ischar(varargin{1})
+0036     gui_State.gui_Callback = str2func(varargin{1});
+0037 <span class="keyword">end</span>
+0038 
+0039 <span class="keyword">if</span> nargout
+0040     [varargout{1:nargout}] = gui_mainfcn(gui_State, varargin{:});
+0041 <span class="keyword">else</span>
+0042     gui_mainfcn(gui_State, varargin{:});
+0043 <span class="keyword">end</span>
+0044 <span class="comment">% End initialization code - DO NOT EDIT</span>
+0045 
+0046 
+0047 <span class="comment">% --- Executes just before EMVizGUI is made visible.</span>
+0048 <a name="_sub1" href="#_subfunctions" class="code">function EMVizGUI_OpeningFcn(hObject, eventdata, handles, varargin)</a>
+0049 <span class="comment">% This function has no output args, see OutputFcn.</span>
+0050 <span class="comment">% hObject    handle to figure</span>
+0051 <span class="comment">% eventdata  reserved - to be defined in a future version of MATLAB</span>
+0052 <span class="comment">% handles    structure with handles and user data (see GUIDATA)</span>
+0053 <span class="comment">% varargin   command line arguments to EMVizGUI (see VARARGIN)</span>
+0054 
+0055 <span class="comment">% Choose default command line output for EMVizGUI</span>
+0056 handles.output = hObject;
+0057 handles.filename=[];
+0058 handles.pathname=[];
+0059 handles.stringSelect{1}=<span class="string">'initialize'</span>;
+0060 handles.stringNumbers=[];
+0061 handles.r=[];
+0062 handles.nmatFound=[];
+0063 handles.nmat=[];
+0064 xlabel(handles.axes1,<span class="string">'Time (Beats)'</span>);
+0065 ylabel(handles.axes1,<span class="string">'Pitch (C4=60)'</span>);
+0066 ylim([55 67])
+0067 xlim([0 8])
+0068 
+0069 
+0070 <span class="comment">% Update handles structure</span>
+0071 guidata(hObject, handles);
+0072 
+0073 <span class="comment">% UIWAIT makes EMVizGUI wait for user response (see UIRESUME)</span>
+0074 <span class="comment">% uiwait(handles.figure1);</span>
+0075 
+0076 
+0077 <span class="comment">% --- Outputs from this function are returned to the command line.</span>
+0078 <a name="_sub2" href="#_subfunctions" class="code">function varargout = EMVizGUI_OutputFcn(hObject, eventdata, handles)</a>
+0079 <span class="comment">% varargout  cell array for returning output args (see VARARGOUT);</span>
+0080 <span class="comment">% hObject    handle to figure</span>
+0081 <span class="comment">% eventdata  reserved - to be defined in a future version of MATLAB</span>
+0082 <span class="comment">% handles    structure with handles and user data (see GUIDATA)</span>
+0083 
+0084 <span class="comment">% Get default command line output from handles structure</span>
+0085 varargout{1} = handles.output;
+0086 
+0087 
+0088 <span class="comment">% --- Executes on button press in pushbutton1.</span>
+0089 <a name="_sub3" href="#_subfunctions" class="code">function pushbutton1_Callback(hObject, eventdata, handles)</a>
+0090 <span class="comment">% hObject    handle to pushbutton1 (see GCBO)</span>
+0091 <span class="comment">% eventdata  reserved - to be defined in a future version of MATLAB</span>
+0092 <span class="comment">% handles    structure with handles and user data (see GUIDATA)</span>
+0093 cla
+0094 handles.filename
+0095 handles.r=[];
+0096 handles.stringSelect=[];
+0097 handles.stringNumbers=[];
+0098 handles.nmat=[];
+0099 handles.nmatFound=[];
+0100 title=get(handles.edit2,<span class="string">'String'</span>);
+0101 type=get(handles.listbox3,<span class="string">'Value'</span>)
+0102 <span class="keyword">try</span>
+0103     cmin=str2num(get(handles.edit3,<span class="string">'String'</span>));
+0104 <span class="keyword">catch</span>
+0105     cmin=5;
+0106 <span class="keyword">end</span>
+0107 <span class="keyword">if</span> strcmp(title,<span class="string">''</span>)
+0108     title=handles.filename;
+0109 <span class="keyword">end</span>
+0110 [r,nmat,nmatFound]=searchAndPlotPolyOrMono([handles.pathname handles.filename],title,type,cmin)
+0111 n=numel(r)
+0112 strings={};
+0113 <span class="keyword">for</span> i =1:n
+0114     strings{i}=strcat(<span class="string">'String '</span>,num2str(i));
+0115 <span class="keyword">end</span>
+0116 set(handles.listbox1,<span class="string">'Value'</span>,1);
+0117 set(handles.listbox1,<span class="string">'String'</span>,strings);
+0118 set(handles.r,<span class="string">'Value'</span>,r);
+0119 handles.r=r;
+0120 set(handles.nmat,<span class="string">'Value'</span>,nmat);
+0121 handles.nmat=nmat;
+0122 set(handles.nmatFound,<span class="string">'Value'</span>,nmatFound);
+0123 handles.nmatFound=nmatFound;
+0124 guidata(hObject,handles);
+0125 
+0126 
+0127 <span class="comment">%% &quot;SELECT MIDI FILE&quot;</span>
+0128 <span class="comment">% --- Executes on button press in pushbutton2.</span>
+0129 <a name="_sub4" href="#_subfunctions" class="code">function pushbutton2_Callback(hObject, eventdata, handles)</a>
+0130 <span class="comment">% hObject    handle to pushbutton2 (see GCBO)</span>
+0131 <span class="comment">% eventdata  reserved - to be defined in a future version of MATLAB</span>
+0132 <span class="comment">% handles    structure with handles and user data (see GUIDATA)</span>
+0133 cla
+0134 handles.filename = [];
+0135 handles.pathname = [];
+0136 <span class="comment">%handles.text9=[];</span>
+0137 strings=[];
+0138 handles.stringSelect=[];
+0139 stringSelect=handles.stringSelect
+0140 set(handles.listbox1,<span class="string">'String'</span>,strings);
+0141 set(handles.listbox2,<span class="string">'String'</span>,stringSelect);
+0142 set(handles.edit1,<span class="string">'String'</span>,<span class="string">''</span>);
+0143 set(handles.edit2,<span class="string">'String'</span>,<span class="string">''</span>);
+0144 [filename, pathname] = uigetfile(<span class="string">'*.mid'</span>);
+0145 set(handles.filename, <span class="string">'String'</span>,filename);
+0146 handles.filename = filename
+0147 set(handles.pathname, <span class="string">'String'</span>,pathname);
+0148 handles.pathname = pathname;
+0149 set(handles.text9, <span class="string">'String'</span>,filename);
+0150 <span class="comment">%handles.text9 = filename;</span>
+0151 guidata(hObject,handles);
+0152 
+0153 
+0154 <span class="comment">% --- Executes on selection change in listbox1.</span>
+0155 <a name="_sub5" href="#_subfunctions" class="code">function listbox1_Callback(hObject, eventdata, handles)</a>
+0156 <span class="comment">% hObject    handle to listbox1 (see GCBO)</span>
+0157 <span class="comment">% eventdata  reserved - to be defined in a future version of MATLAB</span>
+0158 <span class="comment">% handles    structure with handles and user data (see GUIDATA)</span>
+0159 
+0160 <span class="comment">% Hints: contents = cellstr(get(hObject,'String')) returns listbox1 contents as cell array</span>
+0161 <span class="comment">%        contents{get(hObject,'Value')} returns selected item from listbox1</span>
+0162 
+0163 
+0164 <span class="comment">% --- Executes during object creation, after setting all properties.</span>
+0165 <a name="_sub6" href="#_subfunctions" class="code">function listbox1_CreateFcn(hObject, eventdata, handles)</a>
+0166 <span class="comment">% hObject    handle to listbox1 (see GCBO)</span>
+0167 <span class="comment">% eventdata  reserved - to be defined in a future version of MATLAB</span>
+0168 <span class="comment">% handles    empty - handles not created until after all CreateFcns called</span>
+0169 
+0170 <span class="comment">% Hint: listbox controls usually have a white background on Windows.</span>
+0171 <span class="comment">%       See ISPC and COMPUTER.</span>
+0172 <span class="keyword">if</span> ispc &amp;&amp; isequal(get(hObject,<span class="string">'BackgroundColor'</span>), get(0,<span class="string">'defaultUicontrolBackgroundColor'</span>))
+0173     set(hObject,<span class="string">'BackgroundColor'</span>,<span class="string">'white'</span>);
+0174 <span class="keyword">end</span>
+0175 
+0176 
+0177 <span class="comment">% --- Executes on button press in replot.</span>
+0178 <a name="_sub7" href="#_subfunctions" class="code">function replot_Callback(hObject, eventdata, handles)</a>
+0179 <span class="comment">% hObject    handle to replot (see GCBO)</span>
+0180 <span class="comment">% eventdata  reserved - to be defined in a future version of MATLAB</span>
+0181 <span class="comment">% handles    structure with handles and user data (see GUIDATA)</span>
+0182 <span class="comment">%set(handles.listbox2,'Value',[]);</span>
+0183 
+0184 stringNumbers=handles.stringNumbers;
+0185 stringSelect=handles.stringSelect;
+0186 
+0187 r=handles.r;
+0188 nmat=handles.nmat;
+0189 nmatFound=handles.nmatFound
+0190 title=get(handles.edit2,<span class="string">'String'</span>);
+0191 <span class="keyword">if</span> strcmp(title,<span class="string">''</span>)
+0192     title=handles.filename;
+0193 <span class="keyword">end</span>
+0194 stringSelect
+0195 stringNumbers
+0196 <span class="keyword">if</span> isempty(stringNumbers)==1
+0197     r=arcPlot(r,nmat,nmatFound,title,0);
+0198 <span class="keyword">else</span>
+0199     r=arcPlot(r,nmat,nmatFound,title,0,stringNumbers,stringSelect);
+0200 <span class="keyword">end</span>
+0201 handles.stringSelect=[];
+0202 handles.stringNumbers=[];
+0203 stringSelect=handles.stringSelect
+0204 set(handles.listbox2,<span class="string">'String'</span>,stringSelect);
+0205 guidata(hObject,handles);
+0206 
+0207 
+0208 <span class="comment">% --- Executes on selection change in listbox2.</span>
+0209 <a name="_sub8" href="#_subfunctions" class="code">function listbox2_Callback(hObject, eventdata, handles)</a>
+0210 <span class="comment">% hObject    handle to listbox2 (see GCBO)</span>
+0211 <span class="comment">% eventdata  reserved - to be defined in a future version of MATLAB</span>
+0212 <span class="comment">% handles    structure with handles and user data (see GUIDATA)</span>
+0213 
+0214 <span class="comment">% Hints: contents = cellstr(get(hObject,'String')) returns listbox2 contents as cell array</span>
+0215 <span class="comment">%        contents{get(hObject,'Value')} returns selected item from listbox2</span>
+0216 
+0217 
+0218 <span class="comment">% --- Executes during object creation, after setting all properties.</span>
+0219 <a name="_sub9" href="#_subfunctions" class="code">function listbox2_CreateFcn(hObject, eventdata, handles)</a>
+0220 <span class="comment">% hObject    handle to listbox2 (see GCBO)</span>
+0221 <span class="comment">% eventdata  reserved - to be defined in a future version of MATLAB</span>
+0222 <span class="comment">% handles    empty - handles not created until after all CreateFcns called</span>
+0223 
+0224 <span class="comment">% Hint: listbox controls usually have a white background on Windows.</span>
+0225 <span class="comment">%       See ISPC and COMPUTER.</span>
+0226 <span class="keyword">if</span> ispc &amp;&amp; isequal(get(hObject,<span class="string">'BackgroundColor'</span>), get(0,<span class="string">'defaultUicontrolBackgroundColor'</span>))
+0227     set(hObject,<span class="string">'BackgroundColor'</span>,<span class="string">'white'</span>);
+0228 <span class="keyword">end</span>
+0229 
+0230 
+0231 <span class="comment">% --- Executes on button press in pushbutton4.</span>
+0232 <a name="_sub10" href="#_subfunctions" class="code">function pushbutton4_Callback(hObject, eventdata, handles)</a>
+0233 <span class="comment">% hObject    handle to pushbutton4 (see GCBO)</span>
+0234 <span class="comment">% eventdata  reserved - to be defined in a future version of MATLAB</span>
+0235 <span class="comment">% handles    structure with handles and user data (see GUIDATA)</span>
+0236 <span class="comment">%listBoxStrings = get(handles.listbox1,'String');</span>
+0237 stringSelect=handles.stringSelect;
+0238 stringNumbers=handles.stringNumbers;
+0239 temp=get(handles.listbox1,<span class="string">'Value'</span>)
+0240 stringNumbers(end+1)=temp;
+0241 temp2=get(handles.edit1,<span class="string">'String'</span>)
+0242 <span class="keyword">if</span> iscell(temp2)==1
+0243     stringName=temp2{1};
+0244 <span class="keyword">else</span>
+0245     stringName=temp2;
+0246 <span class="keyword">end</span>
+0247 set(handles.edit1,<span class="string">'String'</span>,<span class="string">''</span>);
+0248 <span class="keyword">try</span>
+0249     stringSelect{1}
+0250 <span class="keyword">catch</span>
+0251     stringSelect
+0252 <span class="keyword">end</span>
+0253 stringName
+0254 <span class="keyword">try</span>
+0255     <span class="keyword">if</span> strcmp(stringSelect{1},<span class="string">'initialize'</span>)==1
+0256         <span class="keyword">if</span> strcmp(stringName,<span class="string">''</span>)==1
+0257             stringSelect{1}=strcat(<span class="string">'String '</span>,num2str(temp));
+0258         <span class="keyword">else</span>
+0259             stringSelect{1}=stringName;
+0260         <span class="keyword">end</span>
+0261     <span class="keyword">elseif</span> strcmp(stringName,<span class="string">''</span>)==1
+0262         
+0263         stringSelect{end+1}=strcat(<span class="string">'String '</span>,num2str(temp));
+0264     <span class="keyword">else</span>
+0265         stringSelect{end+1}=stringName;
+0266         
+0267     <span class="keyword">end</span>
+0268 <span class="keyword">catch</span>
+0269     <span class="keyword">if</span> strcmp(stringName,<span class="string">''</span>)==1
+0270         stringSelect{end+1}=strcat(<span class="string">'String '</span>,num2str(temp));
+0271     <span class="keyword">else</span>
+0272         stringSelect{end+1}=stringName;
+0273     <span class="keyword">end</span>
+0274 <span class="keyword">end</span>
+0275 handles.stringSelect=[];
+0276 handles.stringNumbers=[];
+0277 stringSelect
+0278 set(handles.listbox2,<span class="string">'String'</span>,stringSelect);
+0279 set(handles.stringSelect,<span class="string">'String'</span>,stringSelect);
+0280 handles.stringSelect=stringSelect;
+0281 set(handles.stringNumbers,<span class="string">'Value'</span>,stringNumbers);
+0282 handles.stringNumbers=stringNumbers;
+0283 handles.stringNumbers
+0284 guidata(hObject,handles);
+0285 
+0286 
+0287 <a name="_sub11" href="#_subfunctions" class="code">function edit1_Callback(hObject, eventdata, handles)</a>
+0288 <span class="comment">% hObject    handle to edit1 (see GCBO)</span>
+0289 <span class="comment">% eventdata  reserved - to be defined in a future version of MATLAB</span>
+0290 <span class="comment">% handles    structure with handles and user data (see GUIDATA)</span>
+0291 
+0292 <span class="comment">% Hints: get(hObject,'String') returns contents of edit1 as text</span>
+0293 <span class="comment">%        str2double(get(hObject,'String')) returns contents of edit1 as a double</span>
+0294 
+0295 
+0296 
+0297 <span class="comment">% --- Executes during object creation, after setting all properties.</span>
+0298 <a name="_sub12" href="#_subfunctions" class="code">function edit1_CreateFcn(hObject, eventdata, handles)</a>
+0299 <span class="comment">% hObject    handle to edit1 (see GCBO)</span>
+0300 <span class="comment">% eventdata  reserved - to be defined in a future version of MATLAB</span>
+0301 <span class="comment">% handles    empty - handles not created until after all CreateFcns called</span>
+0302 
+0303 <span class="comment">% Hint: edit controls usually have a white background on Windows.</span>
+0304 <span class="comment">%       See ISPC and COMPUTER.</span>
+0305 <span class="keyword">if</span> ispc &amp;&amp; isequal(get(hObject,<span class="string">'BackgroundColor'</span>), get(0,<span class="string">'defaultUicontrolBackgroundColor'</span>))
+0306     set(hObject,<span class="string">'BackgroundColor'</span>,<span class="string">'white'</span>);
+0307 <span class="keyword">end</span>
+0308 
+0309 
+0310 <span class="comment">% --- Executes on button press in plotString.</span>
+0311 <a name="_sub13" href="#_subfunctions" class="code">function plotString_Callback(hObject, eventdata, handles)</a>
+0312 <span class="comment">% hObject    handle to plotString (see GCBO)</span>
+0313 <span class="comment">% eventdata  reserved - to be defined in a future version of MATLAB</span>
+0314 <span class="comment">% handles    structure with handles and user data (see GUIDATA)</span>
+0315 cla
+0316 r=handles.r;
+0317 nmatFound=handles.nmatFound;
+0318 temp=get(handles.listbox1,<span class="string">'Value'</span>);
+0319 card=r(temp).card;
+0320 ind=r(temp).segind(1);
+0321 <span class="comment">%axes(handleToAxes1);</span>
+0322 hold on
+0323 timeAdj=floor(nmatFound(ind,1));
+0324 <span class="keyword">for</span> i=1:card
+0325     pitches(i)=nmatFound(ind+i-1,4)
+0326     onsets(i)=nmatFound(ind+i-1,1)
+0327     plot([nmatFound(ind+i-1,1)-timeAdj,nmatFound(ind+i-1,1)+nmatFound(ind+i-1,2)-timeAdj],<span class="keyword">...</span>
+0328         [nmatFound(ind+i-1,4),nmatFound(ind+i-1,4)],<span class="string">'Color'</span>,<span class="string">'k'</span>,<span class="string">'LineWidth'</span>, 10);
+0329     <span class="comment">% if i&gt;10</span>
+0330     <span class="comment">%     break</span>
+0331     <span class="comment">% end</span>
+0332 <span class="keyword">end</span>
+0333 ylim([min(pitches)-3 max(pitches)+3]);
+0334 xlim([onsets(1)-1-timeAdj onsets(end)+2-timeAdj]);
+0335 
+0336 hold off
+0337 
+0338 nmat=nmatFound(ind:ind+card-1,:)
+0339 nmat(:,1)=nmat(:,1)-nmat(1,1);
+0340 soundsc(nmat2snd(nmat),22050);
+0341 
+0342 
+0343 
+0344 <a name="_sub14" href="#_subfunctions" class="code">function edit2_Callback(hObject, eventdata, handles)</a>
+0345 <span class="comment">% hObject    handle to edit2 (see GCBO)</span>
+0346 <span class="comment">% eventdata  reserved - to be defined in a future version of MATLAB</span>
+0347 <span class="comment">% handles    structure with handles and user data (see GUIDATA)</span>
+0348 
+0349 <span class="comment">% Hints: get(hObject,'String') returns contents of edit2 as text</span>
+0350 <span class="comment">%        str2double(get(hObject,'String')) returns contents of edit2 as a double</span>
+0351 
+0352 
+0353 <span class="comment">% --- Executes during object creation, after setting all properties.</span>
+0354 <a name="_sub15" href="#_subfunctions" class="code">function edit2_CreateFcn(hObject, eventdata, handles)</a>
+0355 <span class="comment">% hObject    handle to edit2 (see GCBO)</span>
+0356 <span class="comment">% eventdata  reserved - to be defined in a future version of MATLAB</span>
+0357 <span class="comment">% handles    empty - handles not created until after all CreateFcns called</span>
+0358 
+0359 <span class="comment">% Hint: edit controls usually have a white background on Windows.</span>
+0360 <span class="comment">%       See ISPC and COMPUTER.</span>
+0361 <span class="keyword">if</span> ispc &amp;&amp; isequal(get(hObject,<span class="string">'BackgroundColor'</span>), get(0,<span class="string">'defaultUicontrolBackgroundColor'</span>))
+0362     set(hObject,<span class="string">'BackgroundColor'</span>,<span class="string">'white'</span>);
+0363 <span class="keyword">end</span>
+0364 
+0365 
+0366 <span class="comment">% --- Executes on selection change in listbox3.</span>
+0367 <a name="_sub16" href="#_subfunctions" class="code">function listbox3_Callback(hObject, eventdata, handles)</a>
+0368 <span class="comment">% hObject    handle to listbox3 (see GCBO)</span>
+0369 <span class="comment">% eventdata  reserved - to be defined in a future version of MATLAB</span>
+0370 <span class="comment">% handles    structure with handles and user data (see GUIDATA)</span>
+0371 
+0372 <span class="comment">% Hints: contents = cellstr(get(hObject,'String')) returns listbox3 contents as cell array</span>
+0373 <span class="comment">%        contents{get(hObject,'Value')} returns selected item from listbox3</span>
+0374 
+0375 
+0376 <span class="comment">% --- Executes during object creation, after setting all properties.</span>
+0377 <a name="_sub17" href="#_subfunctions" class="code">function listbox3_CreateFcn(hObject, eventdata, handles)</a>
+0378 <span class="comment">% hObject    handle to listbox3 (see GCBO)</span>
+0379 <span class="comment">% eventdata  reserved - to be defined in a future version of MATLAB</span>
+0380 <span class="comment">% handles    empty - handles not created until after all CreateFcns called</span>
+0381 
+0382 <span class="comment">% Hint: listbox controls usually have a white background on Windows.</span>
+0383 <span class="comment">%       See ISPC and COMPUTER.</span>
+0384 <span class="keyword">if</span> ispc &amp;&amp; isequal(get(hObject,<span class="string">'BackgroundColor'</span>), get(0,<span class="string">'defaultUicontrolBackgroundColor'</span>))
+0385     set(hObject,<span class="string">'BackgroundColor'</span>,<span class="string">'white'</span>);
+0386 <span class="keyword">end</span>
+0387 
+0388 <a name="_sub18" href="#_subfunctions" class="code">function edit3_Callback(hObject, eventdata, handles)</a>
+0389 <span class="comment">% hObject    handle to edit3 (see GCBO)</span>
+0390 <span class="comment">% eventdata  reserved - to be defined in a future version of MATLAB</span>
+0391 <span class="comment">% handles    structure with handles and user data (see GUIDATA)</span>
+0392 
+0393 <span class="comment">% Hints: get(hObject,'String') returns contents of edit3 as text</span>
+0394 <span class="comment">%        str2double(get(hObject,'String')) returns contents of edit3 as a double</span>
+0395 
+0396 
+0397 <span class="comment">% --- Executes during object creation, after setting all properties.</span>
+0398 <a name="_sub19" href="#_subfunctions" class="code">function edit3_CreateFcn(hObject, eventdata, handles)</a>
+0399 <span class="comment">% hObject    handle to edit3 (see GCBO)</span>
+0400 <span class="comment">% eventdata  reserved - to be defined in a future version of MATLAB</span>
+0401 <span class="comment">% handles    empty - handles not created until after all CreateFcns called</span>
+0402 
+0403 <span class="comment">% Hint: edit controls usually have a white background on Windows.</span>
+0404 <span class="comment">%       See ISPC and COMPUTER.</span>
+0405 <span class="keyword">if</span> ispc &amp;&amp; isequal(get(hObject,<span class="string">'BackgroundColor'</span>), get(0,<span class="string">'defaultUicontrolBackgroundColor'</span>))
+0406     set(hObject,<span class="string">'BackgroundColor'</span>,<span class="string">'white'</span>);
+0407 <span class="keyword">end</span>
+0408 
+0409 <span class="comment">% --- Executes on button press in pushbutton6.</span>
+0410 <a name="_sub20" href="#_subfunctions" class="code">function pushbutton6_Callback(hObject, eventdata, handles)</a>
+0411 <span class="comment">% hObject    handle to pushbutton6 (see GCBO)</span>
+0412 <span class="comment">% eventdata  reserved - to be defined in a future version of MATLAB</span>
+0413 <span class="comment">% handles    structure with handles and user data (see GUIDATA)</span>
+0414 
+0415 nmatFound=nmatMono2poly(handles.nmat,handles.nmatFound)
+0416 r=handles.r;
+0417 <span class="keyword">if</span> isempty(handles.stringNumbers)==1
+0418     rRef=1:numel(r)
+0419 <span class="keyword">else</span>
+0420     rRef=handles.stringNumbers;
+0421 <span class="keyword">end</span>
+0422 
+0423 
+0424 segs=1:5;
+0425 <span class="keyword">for</span> i=1:numel(rRef)
+0426     k=rRef(i);
+0427     <span class="keyword">for</span> j=1:numel(r(k).segind)
+0428         segs(end+1,:)=1:5;
+0429         segs(<span class="keyword">end</span>,1)=k;
+0430         segs(<span class="keyword">end</span>,2)=r(k).card;
+0431         segs(<span class="keyword">end</span>,3:5)=nmatFound(r(k).segind(j),[3,1,4]);
+0432     <span class="keyword">end</span>
+0433 <span class="keyword">end</span>
+0434 segs(1,:)=[];
+0435 String=segs(:,1);
+0436 Cardinality=segs(:,2);
+0437 Channel=segs(:,3);
+0438 Onset=segs(:,4);
+0439 Pitch=segs(:,5);
+0440 T=table(String,Cardinality,Channel,Onset,Pitch);
+0441 temp=handles.filename(1:end-4);
+0442 Tfilename=[handles.pathname temp <span class="string">'.csv'</span>];
+0443 writetable(T,Tfilename);</pre></div>
+<hr><address>Generated on Tue 26-Feb-2019 07:10:15 by <strong><a href="http://www.artefact.tk/software/matlab/m2html/" title="Matlab Documentation in HTML">m2html</a></strong> &copy; 2005</address>
+</body>
+</html>
