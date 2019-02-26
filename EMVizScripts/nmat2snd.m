@@ -42,7 +42,7 @@ function w = nmat2snd(nmat,synthtype,fs)
 %                       semitones lower than desired. To fix, transpose input up by 3 semitones
 %                       (3 midi notes) to get correct pitch with better envelope.
 % 2.5.2005	9:30	TE	Almost a total revision if the shepard function
-%© Part of the MIDI Toolbox, Copyright © 2004, University of Jyvaskyla, Finland
+%ï¿½ Part of the MIDI Toolbox, Copyright ï¿½ 2004, University of Jyvaskyla, Finland
 % See License.txt
 
 if isempty(nmat), return; end

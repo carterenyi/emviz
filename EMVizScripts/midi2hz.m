@@ -12,7 +12,7 @@ function f=midi2hz(m)
 %
 %  Author		Date
 %  T. Eerola	1.2.2003
-%© Part of the MIDI Toolbox, Copyright © 2004, University of Jyvaskyla, Finland
+%ï¿½ Part of the MIDI Toolbox, Copyright ï¿½ 2004, University of Jyvaskyla, Finland
 % See License.txt
 
 if isempty(m), return; end
