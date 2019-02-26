@@ -15,11 +15,11 @@ There are no prerequisites for the Windows standalone application. MATLAB runtim
 ### Installing
 
 Detailed instructions for installation on Windows:
-1.     You will need a web connection to complete installation because MATLAB Runtime (also free) will also be downloaded and installed when you run the application installer 
-2.      At the link above, download the “EMVizWindows” folder or “EMVizWindows.zip” (and unzip)
-3.      Find the “AppInstaller” folder and double-click “MyApplicationInstall_web.exe”. 
-4.      Because this software is not from an “App Store”, you will likely need to override some security preferences after expanding/unzipping and clicking on the.exe, to do this right-click or control-click and select “Run as administrator”
-5.      The installation process (which requires an internet connection) may take 5 to 20 minutes depending on the download speed of your internet connection (it is downloading MATLAB Runtime so your computer can interpret the source code)
+1.  You will need a web connection to complete installation because MATLAB Runtime (also free) will also be downloaded and installed when you run the application installer 
+2.  At the link above, download the “EMVizWindows” folder or “EMVizWindows.zip” (and unzip)
+3.  Find the “AppInstaller” folder and double-click “MyApplicationInstall_web.exe”. 
+4.  Because this software is not from an “App Store”, you will likely need to override some security preferences after expanding/unzipping and clicking on the.exe, to do this right-click or control-click and select “Run as administrator”
+5.  The installation process (which requires an internet connection) may take 5 to 20 minutes depending on the download speed of your internet connection (it is downloading MATLAB Runtime so your computer can interpret the source code)
 
 
 ## Running the tests
