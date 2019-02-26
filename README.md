@@ -5,18 +5,12 @@ accent (Thomassen 1982, Huron 2006). Symbolic music data (.midi, .xml) from vari
 
 ## Getting Started
 
-Mac OSX version:
-https://morehousecollege.box.com/s/3ziy19h8n36l54oza5fcesx2f9z7y2yg
-
-Windows version:
-https://morehousecollege.box.com/s/cd2t5kb5xt4e3f7zsd0zcnbat2e9b1vw
-
-Or github repository:
+All materials (including source code) are hosted at this public GitHub repository:
 https://github.com/carterenyi/emviz
 
 ### Prerequisites
 
-If you have MATLAB 2017b, you will not need to install MATLAB Runtime and may also run individual scripts (source code) from the github repository.
+There are no prerequisites for the Windows standalone application. MATLAB runtime will be downloaded from the web as part of the installation process. If you have MATLAB 2018b or later, you will not need to install MATLAB Runtime and may also run individual scripts (source code) which may also be downloaded from the github repository.
 
 ### Installing
 
@@ -30,11 +24,6 @@ Detailed instructions for installation on Windows:
 
 ## Running the tests
 
-MIDI files for testing are included at the link above. You should be able to produce the images in
-[paper.md](https://github.com/carterenyi/emviz/blob/master/paper.md)
-
-## Deployment
-
 Before importing MIDI files of your own or those found through the Internet, it is recommended that you test basic functionality using one of the provided MIDI files, specifically:
 LiberUsualis_Alleluia_Exsultate.mid
 1.	Click “Select the MIDI file”
@@ -42,17 +31,24 @@ LiberUsualis_Alleluia_Exsultate.mid
 3.	Click “Run Analysis and Plot”
 4.	Wait for analysis (this file is small so run time should be 5 to 10 seconds)
 5.	When the diagram appears, compare it to the image below.
-![Table of features of Wattenberg's Shape of Song, EMViz (released 2017) and ATAVizM (in development)](TestDiagram.png)
+![Test Diagram for "Alleluia, Exsultate Deo" MIDI file with default algorithm settings](TestDiagram.png)
 6.	Click “Export Data as CSV”, navigate to the folder with the MIDI file, open the CSV file with the same filename (ideally, with Microsoft Excel) and compare to the sample CSV output below.
-![Table of features of Wattenberg's Shape of Song, EMViz (released 2017) and ATAVizM (in development)](TestCSVinTable.png)
+![CSV Output for "Alleluia, Exsultate Deo" MIDI file with default algorithm settings in Table format](TestCSVinTable.png)
+
+Additional MIDI files for testing are included at the link above. You should be able to reproduce the images in
+[paper.md](https://github.com/carterenyi/emviz/blob/master/paper.md)
+
+## Deployment
+
+
 
 ## Built With
 
-MATLAB 2018b Compiler
+MATLAB 2018b with Compiler.
 
 ## Contributing
 
-Please read [contributing.md](https://github.com/carterenyi/emviz/blob/master/contributing.md) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [contributing.md](https://github.com/carterenyi/emviz/blob/master/contributing.md) for details on our code of conduct, and the process for submitting pull requests.
 
 ## Authors
 
@@ -65,3 +61,4 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 ## Acknowledgments
 
 * Inspired by Martin Wattenberg's Shape of Song and the phonology of Niger-Congo (African) tone languages.
+* Funded by the American Council of Learned Societies (ACLS) and National Endowment for the Humanities (NEH)
