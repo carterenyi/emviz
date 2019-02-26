@@ -50,6 +50,6 @@ In summary, EMViz (Early Music Visualization) identifies and implements three ma
 
 # Acknowledgements
 
-The project was partially funded by the American Council of Learned Societies (ACLS).
+The project was funded by the American Council of Learned Societies (ACLS) and the National Endowment for the Humanities (NEH).
 
 # References
