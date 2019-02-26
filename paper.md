@@ -13,10 +13,7 @@ authors:
 affiliations:
   - name: Assistant Professor, Morehouse College
     index: 1
-  - name: Instructor, Spelman College
-    index: 2
-  - name: Fellow, American Council of Learned Societies
-    index: 3
+    
 date: 16 October 2018
 bibliography: paper.bib
 ---
