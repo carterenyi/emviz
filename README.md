@@ -38,10 +38,6 @@ LiberUsualis_Alleluia_Exsultate.mid
 Additional MIDI files for testing are included in the repository. You should be able to reproduce the images in
 [paper.md](https://github.com/carterenyi/emviz/blob/master/paper.md)
 
-## Deployment
-
-
-
 ## Built With
 
 MATLAB 2018b with Compiler.
