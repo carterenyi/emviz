@@ -20,22 +20,13 @@ If you have MATLAB 2017b, you will not need to install MATLAB Runtime and may al
 
 ### Installing
 
-Detailed instructions for installation:
-1. You will need a web connection for the entire installation because MATLAB Runtime
-(also free) will also be downloaded and installed when you run the application installer
-2. Download the entire folder at the appropriate link above
-3. Find the “AppInstaller” folder or zip file and double-click it, then double-click
-“MyApplicationInstall_web” (.exe for Windows and .app for Mac); Mac will unzip
-revealing a “test” folder (which has the MyApplicationInstall_web.app inside); Windows
-may also ask you to expand the files before installing (if so, you will need to double-click
-the installer again after this unpacking)
-4. Because this software is not from an “App Store”, you will likely need to override
-some security preferences after expanding/unzipping and clicking on the .app or .exe, to
-do this right-click or control-click and select “Open” on Mac or “Run as administrator”
-on Windows
-5. The actual installation process (which requires an internet connection) may take 5 – 20
-minutes depending on the download speed of your internet connection (it is downloading
-MATLAB Runtime so your computer can interpret the code for the algorithm and GUI)
+Detailed instructions for installation on Windows:
+1.     You will need a web connection to complete installation because MATLAB Runtime (also free) will also be downloaded and installed when you run the application installer 
+2.      At the link above, download the “EMVizWindows” folder or “EMVizWindows.zip” (and unzip)
+3.      Find the “AppInstaller” folder and double-click “MyApplicationInstall_web.exe”. 
+4.      Because this software is not from an “App Store”, you will likely need to override some security preferences after expanding/unzipping and clicking on the.exe, to do this right-click or control-click and select “Run as administrator”
+5.      The installation process (which requires an internet connection) may take 5 to 20 minutes depending on the download speed of your internet connection (it is downloading MATLAB Runtime so your computer can interpret the source code)
+
 
 ## Running the tests
 
@@ -44,11 +35,20 @@ MIDI files for testing are included at the link above. You should be able to pro
 
 ## Deployment
 
-Details for installation on a live system are above.
+Before importing MIDI files of your own or those found through the Internet, it is recommended that you test basic functionality using one of the provided MIDI files, specifically:
+LiberUsualis_Alleluia_Exsultate.mid
+1.	Click “Select the MIDI file”
+2.	Use default settings (i.e. selection box on “Use Pitch” and minimum cardinality at “5”)
+3.	Click “Run Analysis and Plot”
+4.	Wait for analysis (this file is small so run time should be 5 to 10 seconds)
+5.	When the diagram appears, compare it to the image below.
+![Table of features of Wattenberg's Shape of Song, EMViz (released 2017) and ATAVizM (in development)](TestDiagram.png)
+6.	Click “Export Data as CSV”, navigate to the folder with the MIDI file, open the CSV file with the same filename (ideally, with Microsoft Excel) and compare to the sample CSV output below.
+![Table of features of Wattenberg's Shape of Song, EMViz (released 2017) and ATAVizM (in development)](TestCSVinTable.png)
 
 ## Built With
 
-MATLAB 2017b
+MATLAB 2018b Compiler
 
 ## Contributing
 
