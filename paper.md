@@ -18,7 +18,7 @@ affiliations:
   - name: Fellow, Fulbright Scholar Program
     index: 3
   - name: Project Director, Algorithmic Thinking, Analysis and Visualization in Music (ATAVizM)
-    index: 3  
+    index: 4 
 date: 16 October 2018
 bibliography: paper.bib
 ---
