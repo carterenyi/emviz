@@ -1,0 +1,31 @@
+{
+    "description": "<p>Visualize melodic patterns in MIDI files with arc diagrams.</p>", 
+    "license": "MIT", 
+    "title": "EMViz (Early Music Visualization): MATLAB runtime application", 
+    "version": "v1.0.0", 
+    "upload_type": "software", 
+    "keywords": [
+        "Music Visualization"
+    ], 
+    "publication_date": "2019-05-18", 
+    "creators": [
+        {
+            "orcid": "0000-0003-2614-4777", 
+            "affiliation": "Morehouse College", 
+            "name": "Aaron Carter-Enyi"
+        }
+    ], 
+    "access_right": "open", 
+    "related_identifiers": [
+        {
+            "scheme": "url", 
+            "identifier": "https://github.com/carterenyi/emviz/tree/v1.0.0", 
+            "relation": "isSupplementTo"
+        }, 
+        {
+            "scheme": "doi", 
+            "identifier": "10.5281/zenodo.2919896", 
+            "relation": "isVersionOf"
+        }
+    ]
+}
